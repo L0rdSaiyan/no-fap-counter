@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
@@ -44,6 +47,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+  
     -webkit-box-shadow: 0px 0px 18px 0px rgb(94, 94, 94); 
     box-shadow: 0px 0px 18px 0px rgb(94, 94, 94);
     border-radius: 5px;
@@ -171,5 +175,36 @@ main {
         opacity: 0;
         border-radius: 50%;
     }
+
+}
+
+#entrada{
+
+    border-radius: 6px;
+    border: 1px solid gray;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    width: 200px;
+    text-align: center;
+    
+}
+
+.enviar{
+
+    position: absolute;
+    margin-top: 100px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    padding: 10px;
+
+}
+
+.enviar:hover{
+
+    transition: 200ms;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
 
 }
