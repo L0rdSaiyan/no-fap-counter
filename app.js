@@ -6,6 +6,7 @@ function frase() {
     let entrada = document.getElementById("entrada").value
     //Variável que recebe um número aleatório para ser o indice do Array para apresentar a frase aleatoriamente.
     let frase = Math.floor(Math.random() * 10)
+    console.log(array.length)
     
 
     //Estruturas condicionais para validar os dias.
