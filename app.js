@@ -16,6 +16,7 @@ function frase() {
     if (entrada.length == 0) {
 
         alertify.error("Insira a quantidade de dias!")
+        
 
     } else if (entrada < 0) {
 
@@ -50,6 +51,8 @@ function frase() {
                 alertify.message("LEMBRE-SE: COM 30 DIAS VOCÊ SE TORNA UMA LENDA")
             });
     }
+
+
 }
 
 
