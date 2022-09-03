@@ -29,12 +29,19 @@ function frase() {
 
         })
 
-        setTimeout(massa => {
+        setTimeout(ativar => {
 
             video.style.visibility = 'visible'
             video.play()
 
         }, 2000);
+
+        setTimeout(desativar => {
+
+            video.style.visibility = 'hidden'
+
+
+        },32000)
 
     } else {
 
