@@ -12,16 +12,26 @@
 
 </head>
 
-<body>
+<body onkeypress="surprise(event);">
     <header>
         <img src="imgs/logo.svg" alt="" class="logo">
     </header>
     <main>
         <div class="form">
+
+                <video controls src="easteregg.mp4" id="easteregg"></video>
+
             <input type="number" name="" id="entrada" placeholder="Quantos dias, guerreiro?">
             <button class="enviar" onclick="frase();">Enviar</button>
         </div>
+
+        
+
         <div class="area">
+
+            
+
+
             <ul class="circles">
                 <li></li>
                 <li></li>
@@ -35,7 +45,13 @@
                 <li></li>
             </ul>
         </div>
+       
+
     </main>
+
+
+
+    
 
     <!-- JavaScript -->
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>

@@ -209,3 +209,11 @@ main {
     transform: scale(1.1);
 
 }
+
+#easteregg{
+
+    position: absolute;
+    visibility: hidden;    
+    z-index: 1;
+
+}

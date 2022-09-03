@@ -14,7 +14,7 @@ function frase() {
 
         alertify.error("Insira a quantidade de dias!")
 
-    } else if (entrada < 0) {
+    } else if (entrada <0) {
 
         alertify.error("Valores negativos são inválidos!")
 
@@ -29,4 +29,21 @@ function frase() {
     }
 }
 
+let arrayEG = []
 
+function surprise(event){
+    let video = document.getElementById("easteregg")
+
+    let x = event.keyCode
+    let y = String.fromCharCode(x)
+
+    arrayEG.push(y)
+    console.table(arrayEG)
+
+    if(arrayEG[0]=="a"){
+
+        video.style.visibility = 'visible'
+
+    }
+
+}
