@@ -211,10 +211,16 @@ main {
 
 }
 
-#easteregg {
-
+#areaEG{
+    background-color: #4671b2;
+    z-index: 3;
+    display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+    box-shadow: 6px 5px  rgb(49, 47, 47);
     visibility: hidden;
-    z-index: 1;
 
 }

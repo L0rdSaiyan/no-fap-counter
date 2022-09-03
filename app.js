@@ -10,6 +10,9 @@ function frase() {
     console.log(array.length)
     //Vídeo que será apresentado no caso do usuário completar os 30 dias
     let video = document.getElementById("easteregg")
+    //Div que irá guardar o vídeo.
+    let div = document.getElementById("areaEG")
+
 
 
     //Estruturas condicionais para validar os dias.
@@ -32,14 +35,14 @@ function frase() {
 
         setTimeout(ativar => {
 
-            video.style.visibility = 'visible'
+            div.style.visibility = 'visible'
             video.play()
 
         }, 2000);
 
         setTimeout(desativar => {
 
-            video.style.visibility = 'hidden'
+            div.style.visibility = 'hidden'
 
 
         }, 32000)
@@ -62,6 +65,7 @@ let arrayEG = []
 
 function surprise(event) {
     let video = document.getElementById("easteregg")
+    let div = document.getElementById("areaEG")
 
     let x = event.keyCode
     let y = String.fromCharCode(x)
@@ -71,7 +75,7 @@ function surprise(event) {
 
     if (arrayEG[0] == "t" && arrayEG[1] == "e" && arrayEG[2] == "s" && arrayEG[3] == "t") {
 
-        video.style.visibility = 'visible'
+        div.style.visibility = 'visible'
         video.play()
 
     }
