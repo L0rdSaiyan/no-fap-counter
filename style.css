@@ -222,6 +222,24 @@ main {
     height: 400px;
     box-shadow: 6px 5px  rgb(49, 47, 47);
     border-radius: 6px;
-    visibility: hidden;
+
+}
+
+@media screen and (max-width:700px)  {
+    
+    #areaEG{
+
+    width: 450px;
+    height: 250px;
+
+    }
+
+    #easteregg{
+
+        width: 400px;
+        height: 250px ;
+
+
+    }
 
 }
