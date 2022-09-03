@@ -78,6 +78,12 @@ function surprise(event) {
         div.style.visibility = 'visible'
         video.play()
 
+        setTimeout(ativar =>{
+
+            div.style.visibility = 'hidden'
+
+        },32000)
+
     }
 
 }
