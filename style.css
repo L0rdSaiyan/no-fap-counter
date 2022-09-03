@@ -222,6 +222,7 @@ main {
     height: 400px;
     box-shadow: 6px 5px  rgb(49, 47, 47);
     border-radius: 6px;
+    visibility: hidden;
 
 }
 
