@@ -1,3 +1,4 @@
+
 function frase() {
 
     //Array contendo as frases que serão apresentadas no Alertify.
@@ -7,31 +8,49 @@ function frase() {
     //Variável que recebe um número aleatório para ser o indice do Array para apresentar a frase aleatoriamente.
     let frase = Math.floor(Math.random() * 10)
     console.log(array.length)
-    
+    //Vídeo que será apresentado no caso do usuário completar os 30 dias
+    let video = document.getElementById("easteregg")
+
 
     //Estruturas condicionais para validar os dias.
     if (entrada.length == 0) {
 
         alertify.error("Insira a quantidade de dias!")
 
-    } else if (entrada <0) {
+    } else if (entrada < 0) {
 
         alertify.error("Valores negativos são inválidos!")
 
-    }
+    } else if (entrada >= 30) {
 
-    else {
+        alertify.alert(`${entrada} dias!`, "Parabéns, você ganhou o NoFap!", function () {
 
-        alertify.alert(entrada + " dias", array[frase],
+            alertify.message("VOCÊ SE TORNOU UMA LENDA MAIS CONHECIDA QUE O ROCKY BALBOA!")
+
+        })
+
+        setTimeout(massa => {
+
+            video.style.visibility = 'visible'
+            video.play()
+
+        }, 2000);
+
+    } else {
+
+        alertify.alert(`${entrada}`, array[frase],
             function () {
                 alertify.message("LEMBRE-SE: COM 30 DIAS VOCÊ SE TORNA UMA LENDA")
             });
     }
 }
 
+
+//FUNÇÃO PARA ATIVAR O VÍDEO POR MEIO DE EASTEREGG.
+
 let arrayEG = []
 
-function surprise(event){
+function surprise(event) {
     let video = document.getElementById("easteregg")
 
     let x = event.keyCode
@@ -40,9 +59,10 @@ function surprise(event){
     arrayEG.push(y)
     console.table(arrayEG)
 
-    if(arrayEG[0]=="a"){
+    if (arrayEG[0] == "t" && arrayEG[1] == "e" && arrayEG[2] == "s" && arrayEG[3] == "t") {
 
         video.style.visibility = 'visible'
+        video.play()
 
     }
 
