@@ -35,6 +35,7 @@ function frase() {
 
         setTimeout(ativar => {
 
+            video.currentTime = 0;
             div.style.visibility = 'visible'
             video.play()
 
@@ -43,6 +44,7 @@ function frase() {
         setTimeout(desativar => {
 
             div.style.visibility = 'hidden'
+            video.pause()
 
 
         }, 32000)
@@ -76,11 +78,13 @@ function surprise(event) {
     if (arrayEG[0] == "t" && arrayEG[1] == "e" && arrayEG[2] == "s" && arrayEG[3] == "t") {
 
         div.style.visibility = 'visible'
+        video.currentTime = 0
         video.play()
 
         setTimeout(ativar =>{
 
             div.style.visibility = 'hidden'
+            video.pause();
 
         },32000)
 
