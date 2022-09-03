@@ -53,13 +53,6 @@ main {
     border-radius: 5px;
 }
 
-.form p{
-
-    position: absolute;
-    margin-bottom: 90px;
-    font-family: "Montserrat", sans-serif;
-
-}
 
 .area {
     z-index: 1;
@@ -218,10 +211,10 @@ main {
 
 }
 
-#easteregg{
+#easteregg {
 
     position: absolute;
-    visibility: hidden;    
+    visibility: hidden;
     z-index: 1;
 
 }

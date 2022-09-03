@@ -16,7 +16,7 @@ function frase() {
     if (entrada.length == 0) {
 
         alertify.error("Insira a quantidade de dias!")
-        
+        entrada.append()
 
     } else if (entrada < 0) {
 
@@ -42,7 +42,7 @@ function frase() {
             video.style.visibility = 'hidden'
 
 
-        },32000)
+        }, 32000)
 
     } else {
 
